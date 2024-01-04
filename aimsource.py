@@ -82,10 +82,10 @@ def loadsettings(): #loading the settings, duh.
             colorname = Fore.YELLOW
             upper = np.array([38, 255, 203], dtype="uint8") # The upper and lower ranges defined are the colors that the aimbot will detect and shoot at
             lower = np.array([30, 255, 201], dtype="uint8") # It's basically a group of a VERY specific shade of yellow (in this case) that it will shoot at and nothing else. The format is HSV, which differs from RGB.
-        if COLOR.lower() == "blue":
-            colorname = Fore.BLUE
-            upper = np.array([123, 255, 217], dtype="uint8")
-            lower = np.array([113, 206, 189], dtype="uint8")
+        if COLOR.lower() == "red":
+            colorname = Fore.RED
+            upper = np.array([0, 255, 255], dtype="uint8")
+            lower = np.array([0, 0, 0], dtype="uint8")
         if COLOR.lower() == "pink" or COLOR.lower() == "magenta" or COLOR.lower() == "purple":
             colorname = Fore.MAGENTA
             upper = np.array([150, 255, 201], dtype="uint8")
